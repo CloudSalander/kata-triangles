@@ -1,0 +1,2 @@
+# kata-triangles
+Un clásico
