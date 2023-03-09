@@ -13,24 +13,11 @@ Los datos son:
 Ejemplos:
 
 Input:
-- Rectángulo menor-mayor 3
-- Rectángulo mayor-menor 4
-- Equilátero 3
+- Triángulo rectángulo menor-mayor 3
+- Triángulo rectángulo mayor-menor 4
+- Simétrico 3
 
 Output:
-- \#
-  \#\#
-  \#\#\#
-
-- \#\#\#\#\#
-  \#\#\#
-  \#\#
-  \#
-
-- \#
-  \#\#
-  \#\#\#
-  \#\#
-  \#
+![image](https://user-images.githubusercontent.com/1247767/223971932-8ff1b0e4-0633-4ab7-bdea-61daeb626197.png)
 
 30 minutos para ello!
