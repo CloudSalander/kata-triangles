@@ -17,20 +17,20 @@ Input:
 - Rectángulo mayor-menor 4
 - Equilátero 3
 
-Output:
-- \#
-  \#\#
-  \#\#\#
+Output(Podéis obviar las comillas):
+- "#
+   ##
+   ###"
 
-- \#\#\#\#\#
-  \#\#\#
-  \#\#
-  \#
+- "#####
+   ###
+   ##
+   #"
 
-- \#
-  \#\#
-  \#\#\#
-  \#\#
-  \#
+- "#
+   ##
+   ###
+   ##
+   #"
 
 30 minutos para ello!
