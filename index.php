@@ -1,30 +1,21 @@
 <?php
-require('./class/Triangle.php');
+//TODO: Autoload de dependencias automático :)
+require('./class/triangle.php');
 require('./class/downUpTriangle.php');
-require('./class/symetricTriangle.php');
 require('./class/upDownTriangle.php');
-require('./class/triangleType.php');
-
-/*
-foreach (scandir('./class/') as $filename) {
-    $path = dirname(__FILE__) . '/' . $filename;
-    if (is_file($path)) {
-        require $path;
-    }
-}*/
+require('./class/TriangleType.php');
 
 $rows = 3;
-$triangleType = TriangleType::upDown;
+$triangleType = TriangleType::Symetric;
 
-switch ($triangleType) {
-    case TriangleType::upDown:
-        $triangle = new upDownTriangle(3);
-        break;
-    
-    default:
-        // code...
-        break;
+if($triangleType == TriangleType::DownUp || $triangleType == TriangleType::Symetric){
+    $triangle = new DownUpTriangle($rows);
+    $triangle->draw();
 }
 
+if($triangleType == TriangleType::UpDown || $triangleType == TriangleType::Symetric){
+    $triangle = new upDownTriangle($rows);
+    $triangle->draw();
+}
 
 ?>

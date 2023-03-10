@@ -1,18 +1,23 @@
 <?php
 class upDownTriangle extends Triangle {
-	public function draw(){
-		$count = 1;
-		while($count < 1) {
 
-			++$count;
-		}	
+	public function __construct (int $length) {
+		$this->length = $length;
 	}
 
-	private function drawLine($count) {
-		$brick_count = 1;
-		while($brick_count < $count) {
+	public function draw() {
+		$row_cnt = $this->length;
+		while($row_cnt >= 1) {
+			$this->drawRow($row_cnt);
+			--$row_cnt;
+		}
+	}
+
+	protected function drawRow(int $length) {
+		$brick_count = $length;
+		while($brick_count >= 1) {
 			echo BRICK;
-			++$brick_count;
+			--$brick_count;
 		}
 		echo "\n";
 	}
